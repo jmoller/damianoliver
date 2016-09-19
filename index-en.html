@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Royal-Slider-Home-Page</title>
+    <link rel="icon" href="assets/img/content/icon.png">
+    <!-- ========== CSS INCLUDES ========== -->
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/damianoliver.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+</head>
+<body>
+<style scoped>.rsContent {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+</style>
+
+<div class="page-loader">
+    <div class="vertical-align align-center">
+        <img src="assets/loader/loader.gif" alt="" class="loader-img">
+    </div>
+</div>
+<!-- =============== START PLAYER ================ -->
+<div class="main-music-player">
+    <!--<a class="hide-player-button">
+        <i class="fa fa-plus"></i>
+        <i class="fa fa-minus"></i>
+    </a>-->
+    <div id="mesh-main-player" class="jp-jplayer"
+         data-audio-src="https://s3.amazonaws.com/damianoliver/audios/flute.mp3"
+         data-title="See right through ft. Fiora" data-artist="Tensnake"></div>
+
+    <div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+        <div class="container">
+            <div class="row">
+                <div class="left-player-side">
+                    <div class="mesh-prev">
+                        <i class="fa fa-step-backward"></i>
+                    </div>
+                    <div class="mesh-play">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="mesh-pause">
+                        <i class="fa fa-pause"></i>
+                    </div>
+                    <div class="mesh-next">
+                        <i class="fa fa-step-forward"></i>
+                    </div>
+
+
+                    <button id="playlist-toggle" class="jplayerButton">
+                        <span class="span-1"></span>
+                        <span class="span-2"></span>
+                        <span class="span-3"></span>
+                    </button>
+                </div>
+                <div class="center-side">
+                    <div class="mesh-current-time">
+                    </div>
+                    <div class="mesh-seek-bar">
+                        <div class="mesh-play-bar">
+                        </div>
+                    </div>
+                    <div class="mesh-duration">
+                    </div>
+                </div>
+                <div class="right-player-side">
+                    <div class="spotifyYoutubeContainer">
+                        <a target="_blank" href="https://play.spotify.com/artist/2dNWfiY73tjycvzYQhZohf"
+                           class="spotify-icon"><i class="fa fa-spotify"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/user/Damog89" class="youtube-icon"><i
+                                class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =============== END PLAYER ================ -->
+
+<!-- =============== START PLAYLIST ================ -->
+<div class="playlist-wrapper" id="playlist-wrapper">
+    <div class="jp-playlist container">
+        <div class="about-list clearfix">
+            <span class="about-name">NAME</span>
+            <span class="about-length">LENGTH</span>
+            <span class="about-available">AVAILABLE IN</span>
+        </div>
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/todoCambio.mp3" data-artist=""
+             data-thumbnail="assets/img/albums/cover1.jpg" data-id="trak-200">
+            <audio preload="auto" src="https://s3.amazonaws.com/damianoliver/audios/todoCambio.mp3" title="Todo Cambio"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+                    <a target="_blank" href="https://play.spotify.com/track/6XbycqH9YyHfgcPLwaPR7L">
+                        <i class="fa fa-spotify"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=SCujAWsDR6w">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="http://www.deezer.com/album/13788172">
+                        <img class="deezer-icon" src="assets/img/icons/deezerIcon.png" alt="deezer icon">
+
+                    </a>
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        Todo Cambio
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/oportunidad.wav" data-artist=""
+             data-thumbnail="assets/img/albums/cover1.jpg" data-id="trak-200">
+            <audio preload="auto" src="https://s3.amazonaws.com/damianoliver/audios/oportunidad.wav"
+                   title="Todo Cambio"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        Oportunidad
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/soloPalabras.mp3" data-artist=""
+             data-thumbnail="assets/img/albums/cover2.jpg" data-id="trak-201">
+            <audio id="soloPalabras" preload="auto" src="https://s3.amazonaws.com/damianoliver/audios/soloPalabras.mp3"
+                   title="Solo Plabras"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+                    <a target="_blank" href="https://play.spotify.com/track/7HNj2lqFc8swOlgKQhhXuY">
+                        <i class="fa fa-spotify"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=ejGOHADmVHE">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="http://www.deezer.com/album/13788272">
+                        <img class="deezer-icon" src="assets/img/icons/deezerIcon.png" alt="deezer icon">
+                    </a>
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+
+                    <h2>
+                        Solo Palabras
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/sigues.mp3" data-artist=""
+             data-thumbnail="assets/img/albums/cover3.jpg" data-id="trak-201">
+            <audio preload="metadata" src="https://s3.amazonaws.com/damianoliver/audios/sigues.mp3"
+                   title="Sigues"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+
+                    <a target="_blank" href="https://www.youtube.com/watch?v=Rea72Dykc-4">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        Sigues
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/fuisteTu.mp3" data-artist=""
+             data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+            <audio preload="metadata" src="https://s3.amazonaws.com/damianoliver/audios/fuisteTu.mp3"
+                   title="Fuiste Tu"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+
+                    <a target="_blank" href="https://www.youtube.com/watch?v=b2m3iZRU7yQ">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        Fuiste Tu
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/useSomebody.mp3" data-artist=""
+             data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+            <audio preload="metadata" src="https://s3.amazonaws.com/damianoliver/audios/useSomebody.mp3"
+                   title="Use Somebody"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+
+                    <a target="_blank" href="https://www.youtube.com/watch?v=UG0ayOKokEY">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        Use Somebody
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/whereverYouWillGo.mp3"
+             data-artist=""
+             data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+            <audio preload="metadata" src="https://s3.amazonaws.com/damianoliver/audios/whereverYouWillGo.mp3"
+                   title="Wherever You Will Go"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+
+                    <a target="_blank" href="https://www.youtube.com/watch?v=fCLSuL0sj6M">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        Wherever You Will Go
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/angels.mp3" data-artist=""
+             data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+            <audio preload="metadata" src="https://s3.amazonaws.com/damianoliver/audios/angels.mp3"
+                   title="Angels"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+
+                    <a target="_blank" href="https://www.youtube.com/watch?v=-czVk0Co5rA">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        Angels
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/hallelujah.mp3" data-artist=""
+             data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+            <audio preload="metadata" src="https://s3.amazonaws.com/damianoliver/audios/hallelujah.mp3"
+                   title="Hallelujah"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+
+                    <a target="_blank" href="https://www.youtube.com/watch?v=dGeFvA0Db4o">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        Hallelujah
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+
+        <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/allOfMe.mp3" data-artist=""
+             data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+            <audio preload="metadata" src="https://s3.amazonaws.com/damianoliver/audios/allOfMe.mp3"
+                   title="All Of Me"></audio>
+            <div class="additional-button">
+                <div class="center-y-table">
+
+                    <a target="_blank" href="https://www.youtube.com/watch?v=JXbYwD2LfMM">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="play-pause-button">
+                <div class="center-y-table">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="name-artist">
+                <div class="center-y-table">
+                    <h2>
+                        All Of Me
+                    </h2>
+                </div>
+            </div>
+            <time class="trak-duration">
+                00:00
+            </time>
+        </div>
+
+    </div>
+</div>
+<!-- =============== END PLAYLIST ================ -->
+
+<!-- =============== START TOP HEADER ================ -->
+<div class="topHeader">
+    <div class="header">
+
+
+        <div class="rightTopHeader">
+
+
+            <!-- Open Menu Button -->
+            <a class="open-menu">
+                <!-- Buttons Bars -->
+                <span class="span-1"></span>
+                <span class="span-2"></span>
+                <span class="span-3"></span>
+            </a>
+        </div><!-- end rightTopHeader -->
+
+        <div class="centerTopHeader">
+            <a target="_blank" href="https://www.facebook.com/damianoliveroficial/?fref=ts" class="social-icon"> <i
+                    class="fa fa-facebook"></i> </a>
+            <a target="_blank" href="https://www.instagram.com/damianoliver_/" class="social-icon"> <i
+                    class="fa fa-instagram"></i> </a>
+            <a target="_blank" href="https://twitter.com/damianoliver_" class="social-icon"> <i
+                    class="fa fa-twitter"></i> </a>
+            <a  class="social-icon" href="index.html"> <img class="language-icon" src="assets/img/icons/spanishFlagIcon.svg" width="100px"></a> </a>
+
+        </div>
+
+
+    </div><!-- end header -->
+    <!-- Menu Fixed Container -->
+    <div class="menu-fixed-container">
+        <!-- Menu Fixed Centred Container -->
+        <nav>
+            <!-- Menu Fixed Close Button -->
+            <div class="x-filter">
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Menu Fixed Primary List -->
+            <ul>
+                <!-- Menu Fixed Item -->
+                <li>
+                    <a href="#section-home">
+                        HOME
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#section-videos">
+                        VIDEOS
+                    </a>
+
+                </li>
+                <!-- Menu Fixed Item -->
+                <li>
+                    <a href="#section-gallery">
+                        GALLERY
+                    </a>
+                </li>
+                <!-- Menu Fixed Item -->
+                <li>
+                    <a href="#section-contact">
+                        CONTACT
+                    </a>
+
+                </li>
+
+            </ul>
+            <!-- Menu Fixed Close Button -->
+            <div class="x-filter">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div><!-- end menu-fixed-container -->
+    <!-- =============== STAR LOGO ================ -->
+    <div class="logo-container-top">
+        <a href="index.html"><img src="assets/img/logo/logoDamianOliver.png" alt="Damian Oliver"></a>
+    </div><!-- end logo-container-top -->
+    <!-- =============== END LOGO ================ -->
+</div><!-- end topHeader -->
+<!-- =============== END TOP HEADER ================ -->
+
+<!-- =============== START BREADCRUMB ================ -->
+<section id="section-home" class="no-mb" id="top">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="before-FullscreenSlider"></div>
+            <div class="breadcrumb-fullscreen-parent sliderContainerBreadcrumb">
+                <div class="starTitle">
+
+                    <div class="grid__item">
+                        <h1>
+                            <a class="link link-yaku" href="index-royal-slider.html#">
+                                <span>D</span><span>A</span><span>M</span><span>I</span><span>A</span><span>N</span><br>
+                                <span>O</span><span>L</span><span>I</span><span>V</span><span>E</span><span>R</span>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div id="ava-slider" class="royalSlider  heroSlider rsMinW change-header-items-color">
+                    <div data-rsDelay="7000" class="rsContent "
+                         style="background-image: url('assets/img/RoyalSlider/damo2.jpg');">
+                        <img class="rsImg" src="assets/img/RoyalSlider/damo2.jpg" alt="">
+                    </div>
+
+                    <div data-rsDelay="7000" class="rsContent change-background-position-1"
+                         style="background-image: url('assets/img/RoyalSlider/damo3.jpg');">
+                        <img class="rsImg" src="assets/img/RoyalSlider/damo3.jpg" alt="">
+                    </div>
+
+                    <div data-rsDelay="7000" class="rsContent change-background-position"
+                         style="background-image: url('assets/img/RoyalSlider/damo4.jpg');">
+                        <img class="rsImg" src="assets/img/RoyalSlider/damo4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== END BREADCRUMB ================ -->
+
+<!-- ================================================== -->
+<!-- =============== VIDEO GALLERY ================ -->
+<!-- ================================================== -->
+<section id="section-videos" class="videoG padding" id="content">
+    <div class="row">
+        <div class="col-md-12 section-header">
+            <h1>VIDEOS</h1>
+        </div>
+    </div>
+    <div class="videoInner">
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="videoTitle">
+
+                            <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/SCujAWsDR6w">
+                            </iframe>
+
+                            <!--<video id="todoCambio" controls="" width="100%" height="auto"
+                                   poster="https://s3.amazonaws.com/damianoliver/videos/covers/todoCambioCover.png">
+                                <source src="assets/video/todoCambio.mp4" type="video/mp4">
+                            </video>-->
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="videoTitle">
+
+
+                            <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/ejGOHADmVHE">
+                            </iframe>
+
+                            <!--<video id="soloPalabras" controls="" width="100%" height="auto"
+                                   poster="https://s3.amazonaws.com/damianoliver/videos/covers/soloPalabrasCover.jpg">
+                                <source src="assets/video/soloPalabras.mp4" type="video/mp4">
+                            </video>-->
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="videoTitle">
+
+
+                            <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/Rea72Dykc-4">
+                            </iframe>
+
+                            <!--<video id="sigues" controls="" width="100%" height="auto"
+                                   poster="https://s3.amazonaws.com/damianoliver/videos/covers/siguesCover.png">
+                                <source src="assets/video/sigues.mp4" type="video/mp4">
+                            </video>-->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="videoTitle">
+
+
+                            <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/3bG6z-GqqfE">
+                            </iframe>
+
+
+                            <!--<video id="whenIWasYourMen" controls="" width="100%" height="auto"
+                                   poster="https://s3.amazonaws.com/damianoliver/videos/covers/whenIWasYourMenCover.png">
+                                <source src="assets/video/whenIWasYourMen.mp4" type="video/mp4">
+                            </video>-->
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="videoTitle">
+
+
+                            <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/dGeFvA0Db4o">
+                            </iframe>
+
+
+                            <!--<video id="hallelujah" controls="" width="100%" height="auto"
+                                   poster="https://s3.amazonaws.com/damianoliver/videos/covers/halelluhaCover.png">
+                                <source src="assets/video/hallelujah.mp4" type="video/mp4">
+                            </video>-->
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div id="angelsVideoContainer" class="videoTitle">
+
+                            <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/-czVk0Co5rA">
+                            </iframe>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="videoTitle">
+
+                            <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/UG0ayOKokEY">
+                            </iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- ================================================== -->
+<!-- =============== END VIDEO GALLERY ================ -->
+<!-- ================================================== -->
+
+
+<!-- =============== START GALLERY SECTION ================ -->
+<section id="section-gallery" style="padding-bottom:0; " class="padding">
+    <div class="row">
+        <div class="col-md-12 section-header">
+            <h1>GALLERY</h1>
+        </div>
+    </div>
+    <div class="gallerySection">
+        <div class="container-fluid" style="padding:0;">
+            <div class="col-sm-12">
+                <!-- Content Container -->
+                <div class="content-container clearfix">
+                    <!-- Single Album Container -->
+                    <div class="single-photo-album-container">
+                        <div class="row">
+                            <!-- Single Album Article -->
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img data-original="https://s3.amazonaws.com/damianoliver/fotos/3.png"
+                                                 class="img-responsive lazy" alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/3.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/2.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/2.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/5.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/5.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/4.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/4.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/1.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/1.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/6.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/6.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/7.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/7.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy "
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/9.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/9.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/10.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/10.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/11.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/11.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/12.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/12.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/8.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/8.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/14.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/14.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/13.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/13.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/16.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/16.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/11.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/11.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/12.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/12.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/8.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/8.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/15.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/15.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/17.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/17.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/18.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/18.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/21.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/21.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/22.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/22.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/20.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/20.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/19.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/19.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/23.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/23.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/24.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/24.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/27.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/27.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/28.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/28.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/26.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/26.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+
+
+                            <article class="col-sm-12 col-md-6 col-xs-12">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <!-- Single Album Image -->
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/33.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/33.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                    <!-- Single Album View Button -->
+
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/31.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/31.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            <!-- Single Album Article -->
+                            <article class="col-sm-3 col-xs-6">
+                                <!-- Single Album Contant Container -->
+                                <figure>
+                                    <!-- Single Album Image -->
+                                    <figcaption>
+                                        <div class="hovereffect">
+                                            <img class="img-responsive lazy"
+                                                 data-original="https://s3.amazonaws.com/damianoliver/fotos/32.png"
+                                                 alt="">
+                                            <div class="overlay">
+                                                <a class="info lightbox"
+                                                   href="https://s3.amazonaws.com/damianoliver/fotos/32.png"
+                                                   rel="gallery"></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div>
+</section>
+<!-- =============== END GALLERY SECTION ================ -->
+
+<!-- =============== START CONTACT ================ -->
+<section id="section-contact" class="contactSingle padding background-properties"
+         style="background-image:linear-gradient(rgba(255, 255,255, 0.8), rgba(255, 255, 255, 0.8)),url('assets/img/RoyalSlider/damo4.jpg');">
+    <div class="row">
+        <div class="col-md-12 section-header">
+            <h1>CONTACT</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="contactTop">
+                    <h2>Information</h2>
+                    <h4>Montevideo, Uruguay</h4>
+                    <div class="contactInfo">
+                        <ul>
+                            <li>Email: <a href="contact.html#">contacto@damianolivermusic.com</a></li>
+                            <li>Cel: <a href="contact.html#">(+598) 096 869 205</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- end col-sm-4 -->
+            <div class="col-sm-7 col-sm-offset-1">
+                <div class="singleBlogForm">
+                    <h2>Drop me a line!</h2>
+                    <form action="mail.php" method="POST" class="comment-form">
+                        <div class="col-md-12">
+                            <input id="nombre" name="nombre" type="text" value="" aria-required="true" required
+                                   placeholder="Name (*)">
+                        </div>
+                        <div class="col-md-12">
+                            <input id="telefono" name="telefono" type="text" value="" aria-required="true"
+                                   placeholder="Telephone">
+                        </div>
+                        <div class="col-md-12">
+                            <input id="email" name="email" type="text" value="" aria-required="true" required
+                                   placeholder="Email (*)">
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea name="mensaje" placeholder="Message (*)" rows="6" required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="form-submit">
+                            <p class="form-submit">
+                                <input type="submit"  value="Send">
+                            </p>
+                        </div>
+                    </form>
+                </div><!-- end contactForm -->
+            </div><!-- end col-sm-7 col-sm-offset-1 -->
+        </div>
+    </div><!-- end container -->
+</section>
+<!-- =============== END CONTACT ================ -->
+
+<!-- =============== START FOOTER ================ -->
+<!--<section style="background-color:#eeeeee;">
+    <div class="footer footerPadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="copyFooter">
+                        <a href="index-royal-slider.html#">&copy; Aqura 2016</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <nav class="social-icons">
+                        <ul class="clearfix">
+                            <li><a href="index-royal-slider.html#" class="icon-button shopIcon"><i
+                                    class="fa fa-twitter"></i><span></span></a></li>
+                            <li><a href="index-royal-slider.html#" class="icon-button shopIcon"><i
+                                    class="fa fa-facebook"></i><span></span></a></li>
+                            <li><a href="index-royal-slider.html#" class="icon-button shopIcon"><i
+                                    class="fa fa-apple"></i><span></span></a></li>
+                            <li><a href="index-royal-slider.html#" class="icon-button shopIcon"><i
+                                    class="fa fa-lastfm"></i><span></span></a></li>
+                            <li><a href="index-royal-slider.html#" class="icon-button shopIcon"><i
+                                    class="fa fa-soundcloud"></i><span></span></a></li>
+                            <li><a href="index-royal-slider.html#" class="icon-button shopIcon"><i
+                                    class="fa fa-youtube-play"></i><span></span></a></li>
+                            <li><a href="index-royal-slider.html#" class="icon-button shopIcon"><i
+                                    class="fa fa-vimeo"></i><span></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-4">
+                    <div class="goTop back-to-top" id="back-to-top">
+                        <i class="fa fa-angle-up"></i>
+                        <a href="index-royal-slider.html#">Go Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- =============== END FOOTER ================ -->
+
+<!-- ================================================== -->
+<!-- =============== START JQUERY SCRIPTS ================ -->
+<!-- ================================================== -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.lazyload.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/jPlayer.js"></script>
+
+
+
+
+
+
+<script src="assets/js/mainSlider.js"></script>
+<!--[if lte IE 9 ]>
+<script src="assets/js/placeholder.js"></script>
+<script>
+    jQuery(function () {
+        jQuery('input, textarea').placeholder();
+    });
+</script>
+<![endif]-->
+
+<script src="assets/js/damianoliver.js"></script>
+<!-- ================================================== -->
+<!-- =============== END JQUERY SCRIPTS ================ -->
+<!-- ================================================== -->
+</body>
+</html>

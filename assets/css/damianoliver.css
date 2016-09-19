@@ -1,0 +1,198 @@
+@font-face {
+    font-family: cocomat;
+    src: url('../fonts/Cocomat-Light-trial.ttf');
+}
+
+@font-face {
+    font-family: cocomatLight;
+    src: url('../fonts/Cocomat-UltraLight-trial.ttf');
+}
+
+.link span {
+    font-family: cocomatLight;
+}
+
+
+.social-icon {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    padding-top: 6px;
+    margin-left: 20px;
+}
+
+.social-icon:hover {
+    text-decoration: none;
+}
+
+.social-icon i {
+    transition: transform 0.2s;
+}
+
+.social-icon:hover i {
+    color: #fff;
+    transform: scale(1.5);
+
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-twitter {
+    background-color: transparent;
+}
+
+.centerTopHeader {
+    float: right;
+    padding-top: 6px;
+}
+
+.spotifyYoutubeContainer {
+    width: 100px;
+    text-align: center;
+}
+
+.spotify-icon i,
+.youtube-icon i{
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.spotify-icon,
+.youtube-icon{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.main-music-player.active .mesh-play i,
+.main-music-player.active .mesh-prev i,
+.main-music-player.active .mesh-next i,
+.main-music-player.active .mesh-play i,
+.main-music-player.active .mesh-pause i,
+.main-music-player.active .spotifyYoutubeContainer i {
+    color: #333;
+}
+
+body.opacityPlaylist .main-music-player .spotifyYoutubeContainer i {
+    color: #333;
+}
+
+
+.playlist-wrapper {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 100px;
+    background: rgba(255, 255, 255, 0.97);
+    overflow: scroll;
+}
+
+.jp-playlist {
+
+    padding-bottom: 50px;
+}
+
+.deezer-icon {
+    width:25px;
+}
+
+.trak-item .additional-button a i {
+    background: transparent;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.trak-item .additional-button {
+    float: right;
+    width: 16rem;
+    text-align: center;
+}
+
+.trak-item .additional-button a {
+    display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+    text-align: center;
+    line-height: 2.8rem;
+    color: #000;
+    margin-right: 1.7rem;
+    position: relative;
+}
+
+.center-y-table a:last-child:hover img:last-child {
+    content:url("../img/icons/deezerIconWhite.png");
+}
+
+/*HEADER OF EACH SECTION*/
+.section-header {
+    padding-bottom: 60px;
+}
+
+.section-header h1 {
+    font-family: cocomat;
+    color: #333;
+    text-align: center;
+}
+
+.section-header h1:after {
+    content: '';
+    width: 100px;
+    border-bottom: 1px solid #bb9b69;
+    height: 35px;
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+
+}
+
+
+/*TITULO DE LOS VIDEOS*/
+.videoTitle h1 {
+    font-family: cocomatLight;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#angelsVideoContainer  h1 {
+    color: #333;
+}
+
+
+
+
+.videoInner .row {
+    margin-bottom: 20px;
+}
+
+
+.language-icon {
+    width: 20px;
+    padding-bottom: 2px;
+
+}
+
+.social-icon img {
+    transition: transform 0.2s;
+}
+
+.social-icon img:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+

@@ -1,0 +1,144 @@
+@media only screen and (max-width: 500px) {
+
+    .starTitle h1 a {
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .logo-container-top {
+        display: none;
+    }
+
+    .centerTopHeader {
+        float: left;
+        padding-top: 6px;
+    }
+
+    .social-icon {
+        color: #fff;
+        font-size: 25px;
+        text-decoration: none;
+        background: transparent;
+        cursor: pointer;
+        padding-top: 6px;
+        transition: transform 0.2s;
+        margin-right: 30px;
+        margin-left:0px;
+    }
+
+    .open-menu span {
+        display: block;
+        background: #fff;
+        height: 3px;
+        width: 20px;
+        margin-bottom: 4px;
+        transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
+        position: relative;
+    }
+
+    .center-side {
+        position: absolute;
+        left: 50%;
+        width: 16rem;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        padding: 1rem 0;
+        text-align: center;
+        display: block;
+    }
+
+    .center-side .mesh-seek-bar {
+        height: 0.1rem;
+        cursor: col-resize;
+        width: 15rem !important;
+        background: #fff;
+        top: 1.5rem;
+        position: relative;
+        margin: 0 1rem;
+        display: block;
+    }
+
+    .center-side > * {
+        display: inline-block;
+        line-height: 2.3rem;
+    }
+
+    .mesh-main-player .right-player-side {
+        width: 8rem;
+    }
+
+    .center-side .mesh-duration,
+    .center-side .mesh-current-time{
+        display: none;
+    }
+
+
+    .videoInner .row [class*="col"] {
+        margin-bottom: 20px;
+    }
+
+    #playlist-toggle {
+        display: block;
+        margin-top:0.5rem;
+    }
+
+    .starTitle {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        width: 300px;
+    }
+
+    .change-background-position {
+        background-position: 30% 0px !important;
+    }
+
+    .change-background-position-1 {
+        background-position: 69% 0px !important;
+    }
+
+    .open-menu {
+        margin-left: 1.8rem;
+        float: right;
+        width: 36px;
+        display: block;
+        padding: 0 8px;
+        cursor: pointer;
+        z-index: 6;
+        top: 26px;
+        position: relative;
+    }
+
+    .language-icon {
+        width: 24px;
+        padding-bottom: 2px;
+    }
+}
+
+
+@media only screen and (min-width: 500px) {
+
+    /*IMPORTANTE PARA QUE SE VEA EL REPRODUCTOR EN SAFARI*/
+    .rsOverflow {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: visible;
+        float: left;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        cursor: default !important;
+    }
+
+    #ava-slider {
+        height: 100% !important;
+    }
+
+}
