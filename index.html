@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="assets/css/master.css">
     <link rel="stylesheet" href="assets/css/damianoliver.css">
     <link rel="stylesheet" href="assets/css/media-queries.css">
+
+
+    <script src="assets/js/instafeed.js"></script>
+
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'user',
+            userId: '234111189',
+            accessToken: '234111189.1677ed0.a300c706e2c341e7988c8dd42433a78a',
+            template: '<a href="{{link}}"><img width="33%" src="{{image}}" /></a>'
+        });
+        feed.run();
+    </script>
 </head>
 <body>
 <style scoped>.rsContent {
@@ -92,7 +105,8 @@
         </div>
         <div class="trak-item" data-audio="https://s3.amazonaws.com/damianoliver/audios/todoCambio.mp3" data-artist=""
              data-thumbnail="assets/img/albums/cover1.jpg" data-id="trak-200">
-            <audio preload="auto" src="https://s3.amazonaws.com/damianoliver/audios/todoCambio.mp3" title="Todo Cambio"></audio>
+            <audio preload="auto" src="https://s3.amazonaws.com/damianoliver/audios/todoCambio.mp3"
+                   title="Todo Cambio"></audio>
             <div class="additional-button">
                 <div class="center-y-table">
                     <a target="_blank" href="https://play.spotify.com/track/6XbycqH9YyHfgcPLwaPR7L">
@@ -427,7 +441,8 @@
                     class="fa fa-instagram"></i> </a>
             <a target="_blank" href="https://twitter.com/damianoliver_" class="social-icon"> <i
                     class="fa fa-twitter"></i> </a>
-            <a  class="social-icon" href="index-en.html"> <img class="language-icon" src="assets/img/icons/englishFlagIcon.svg" width="100px"></a> </a>
+            <a class="social-icon" href="index-en.html"> <img class="language-icon"
+                                                              src="assets/img/icons/englishFlagIcon.svg" width="100px"></a> </a>
 
         </div>
 
@@ -504,15 +519,23 @@
                         </h1>
                     </div>
                 </div>
+
+
+                <div class="squareContainer">
+                    <div class="square">
+
+                    </div>
+                </div>
+
                 <div id="ava-slider" class="royalSlider  heroSlider rsMinW change-header-items-color">
                     <div data-rsDelay="7000" class="rsContent "
-                         style="background-image: url('assets/img/RoyalSlider/damo2.jpg');">
-                        <img class="rsImg" src="assets/img/RoyalSlider/damo2.jpg" alt="">
+                         style="background-image: url('assets/img/RoyalSlider/damo1.jpg');">
+                        <img class="rsImg" src="assets/img/RoyalSlider/damo1.jpg" alt="">
                     </div>
 
                     <div data-rsDelay="7000" class="rsContent change-background-position-1"
-                         style="background-image: url('assets/img/RoyalSlider/damo3.jpg');">
-                        <img class="rsImg" src="assets/img/RoyalSlider/damo3.jpg" alt="">
+                         style="background-image: url('assets/img/RoyalSlider/damo2.jpg');">
+                        <img class="rsImg" src="assets/img/RoyalSlider/damo2.jpg" alt="">
                     </div>
 
                     <div data-rsDelay="7000" class="rsContent change-background-position"
@@ -540,7 +563,7 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-offset-4 col-sm-4">
                         <div class="videoTitle">
 
                             <iframe width="420" height="315"
@@ -554,7 +577,8 @@
 
                         </div>
                     </div>
-
+                </div>
+                <div class="row">
                     <div class="col-sm-4">
                         <div class="videoTitle">
 
@@ -586,8 +610,8 @@
 
                         </div>
                     </div>
-                </div>
-                <div class="row">
+
+
                     <div class="col-sm-4">
                         <div class="videoTitle">
 
@@ -604,7 +628,10 @@
 
                         </div>
                     </div>
+                </div>
 
+
+                <div class="row">
                     <div class="col-sm-4">
                         <div class="videoTitle">
 
@@ -631,8 +658,8 @@
 
                         </div>
                     </div>
-                </div>
-                <div class="row">
+
+
                     <div class="col-sm-4">
                         <div class="videoTitle">
 
@@ -1346,6 +1373,27 @@
 </section>
 <!-- =============== END GALLERY SECTION ================ -->
 
+<!-- =============== START SOCIAL NETWORKS ================ -->
+<section id="section-social-networks" class="contactSingle padding background-properties">
+    <div class="row">
+        <div class="col-md-12 section-header">
+            <h1>REDES SOCIALES</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a height="700" class="twitter-timeline" href="https://twitter.com/Damianoliver_">Tweets by Damianoliver_</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-6">
+                <div id="instafeed"></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============== END SOCIAL NETWORKS ================ -->
+
 <!-- =============== START CONTACT ================ -->
 <section id="section-contact" class="contactSingle padding background-properties"
          style="background-image:linear-gradient(rgba(255, 255,255, 0.8), rgba(255, 255, 255, 0.8)),url('assets/img/RoyalSlider/damo4.jpg');">
@@ -1391,7 +1439,7 @@
                         <div class="col-md-12">
                             <p class="form-submit">
                             <p class="form-submit">
-                                <input type="submit"  value="Enviar">
+                                <input type="submit" value="Enviar">
                             </p>
                         </div>
                     </form>
@@ -1457,10 +1505,6 @@
 <script src="assets/js/jPlayer.js"></script>
 
 
-
-
-
-
 <script src="assets/js/mainSlider.js"></script>
 <!--[if lte IE 9 ]>
 <script src="assets/js/placeholder.js"></script>
@@ -1472,6 +1516,9 @@
 <![endif]-->
 
 <script src="assets/js/damianoliver.js"></script>
+
+
+
 <!-- ================================================== -->
 <!-- =============== END JQUERY SCRIPTS ================ -->
 <!-- ================================================== -->

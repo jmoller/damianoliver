@@ -32,5 +32,15 @@ $(document).ready(function () {
     });
 
 
+    $('.squareContainer').click(function () {
+       var target = $('#section-videos');
+
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    });
 
 })

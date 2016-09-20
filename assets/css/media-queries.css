@@ -101,9 +101,7 @@
         background-position: 30% 0px !important;
     }
 
-    .change-background-position-1 {
-        background-position: 69% 0px !important;
-    }
+
 
     .open-menu {
         margin-left: 1.8rem;
@@ -120,6 +118,10 @@
     .language-icon {
         width: 24px;
         padding-bottom: 2px;
+    }
+
+    .squareContainer {
+        left: 42%;
     }
 }
 
